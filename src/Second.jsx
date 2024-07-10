@@ -45,7 +45,7 @@ const Second = () => {
             enableReinitialize
             initialValues={
                 {
-                    pesantName:'',
+                    patientName:'',
                     doctor:'',
                     diseaseType:'',
                     description:'',
@@ -56,7 +56,7 @@ const Second = () => {
             onSubmit={handleSubmit}
             >
                 <Form>
-                    pesantName<Field type="text" name="pesantName"></Field><br /><br />
+                    pesantName<Field type="text" name="patientName"></Field><br /><br />
                     doctor<Field type="text" name="doctor"></Field><br /><br />
                     diseaseType<Field type="text" name="diseaseType"></Field><br /><br />
                     description<Field type="text" name="description"></Field><br /><br />
@@ -78,7 +78,7 @@ const Second = () => {
                 data.map((a,n)=>(
                     <tr>
                         <td>{a._id}</td>
-                        <td>{a.pesantName}</td>
+                        <td>{a.patientName}</td>
                         <td>{a.doctor}</td>
                         <td>{a.diseaseType}</td>
                         <td>{a.description}</td>
